@@ -1,0 +1,4 @@
+FROM python
+RUN pip install pika pykube
+ADD rbmq-destruction-tests.py /
+CMD python rbmq-destruction-tests.py
